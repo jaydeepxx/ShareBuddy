@@ -4,7 +4,7 @@ const morgan = require("morgan");
 const bodyParser = require("body-parser");
 const multer = require("multer");
 const path = require("path");
-const { version } = require("../package.json");
+const { version } = require("./package.json");
 const { connectDB } = require("./database");
 const AppRouter = require("./router");
 const nodemailer = require("nodemailer");
@@ -37,7 +37,7 @@ const storageDir = path.join(__dirname, "..", "storage");
 const upload = multer({
   storage: multerS3({
     s3: s3,
-    acl: "public-read",
+    // acl: "public-read",
     bucket: s3Bucket,
     metadata: function (req, file, cb) {
       cb(null, { fieldName: file.fieldname });

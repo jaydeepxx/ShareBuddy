@@ -1,5 +1,5 @@
 const path = require("path");
-const { version } = require("../package.json");
+const { version } = require("./package.json");
 const _ = require("lodash");
 const File = require("./models/file");
 const Post = require("./models/post");

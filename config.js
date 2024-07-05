@@ -20,4 +20,4 @@ module.exports.s3Config = {
 };
 
 module.exports.s3Region = "ap-south-1";
-module.exports.s3Bucket = "sharebuddy";
+module.exports.s3Bucket = "iiita-classroom";
